@@ -1,0 +1,10 @@
+{
+  "name": "josean-portfolio",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.10.x",
+    "bootstrap": "latest"
+  }
+}
