@@ -35,7 +35,7 @@ gulp.task('html', function () {
 // Compile and minify Sass, then reload page
 gulp.task('sass', function() {
   gulp.src('./sass/*.scss')
-    .pipe(sass())
+    .pipe(sass({includePaths:['./sass/'], errLogToConsole: true}))
     .pipe(gulp.dest('./css'))
     .pipe(sourcemaps.init())
     .pipe(rename({suffix: '.min'}))
