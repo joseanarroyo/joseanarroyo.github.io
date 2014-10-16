@@ -6,9 +6,10 @@ body {
 	font-family: $font-stack;
 }
 
-.navbar-bg {
+.navbar-jmo {
 	background-color: #000;
 }
-.navbar-namefont {
-	font-color: #e7e7e7;
+
+.navbar-default .navbar-brand {
+color: #e7e7e7;
 }
