@@ -26,7 +26,11 @@ a.active {
 }
 
 h1,
-h2,
+h2 {
+    font-family: Lobster, cursive;
+}
+
+
 h3,
 h4,
 h5,
@@ -96,7 +100,7 @@ header img {
 
 header .intro-text .name {
     display: block;
-    font-family: Lobster,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Lobster, cursive;
     font-size: 2em;
     font-weight: 700;
 }

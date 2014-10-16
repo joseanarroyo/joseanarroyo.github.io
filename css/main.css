@@ -16,7 +16,10 @@ a, a:hover, a:focus, a:active, a.active {
   outline: 0;
   color: #18bc9c; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
+  font-family: Lobster, cursive; }
+
+h3, h4, h5, h6 {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
@@ -69,7 +72,7 @@ header img {
 
 header .intro-text .name {
   display: block;
-  font-family: Lobster, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lobster, cursive;
   font-size: 2em;
   font-weight: 700; }
 
@@ -349,3 +352,20 @@ body {
 
 .navbar-default .navbar-brand {
   color: #e7e7e7; }
+
+header {
+  background: #fff;
+  color: #333333; }
+
+#portfolio {
+  background: #FFE919; }
+
+#about {
+  background: #14ADCC; }
+
+#contact {
+  background: #B21253; }
+
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #30687C; }
