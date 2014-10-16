@@ -17,7 +17,6 @@ a, a:hover, a:focus, a:active, a.active {
   color: #18bc9c; }
 
 h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
@@ -70,8 +69,7 @@ header img {
 
 header .intro-text .name {
   display: block;
-  text-transform: uppercase;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lobster, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2em;
   font-weight: 700; }
 
@@ -105,7 +103,6 @@ header .intro-text .skills {
     font-size: 1.5em; } }
 
 .navbar {
-  text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
@@ -346,3 +343,9 @@ footer .footer-below {
 
 body {
   font-family: Helvetica, Arial, sans-serif; }
+
+.navbar-bg {
+  background-color: #000; }
+
+.navbar-namefont {
+  font-color: #e7e7e7; }
