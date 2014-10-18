@@ -16,7 +16,9 @@ gulp.task('connect', function() {
 
 // Copy dependencies
 gulp.task('copy', function () {
-  gulp.src(['bower_components/bootstrap/dist/css/bootstrap.min.css'])
+  //gulp.src(['bower_components/bootstrap/dist/css/bootstrap.min.css'])
+  //  .pipe(gulp.dest('./css'));
+  gulp.src(['bower_components/startbootstrap/templates/freelancer/css/bootstrap.min.css'])
     .pipe(gulp.dest('./css'));
   gulp.src(['bower_components/bootstrap/dist/js/bootstrap.min.js'])
     .pipe(gulp.dest('./js/vendor'));
