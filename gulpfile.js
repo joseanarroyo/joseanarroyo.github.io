@@ -6,6 +6,13 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     connect = require('gulp-connect');
 
+var paths = {
+  sassIncludes: [
+    './bower_components/bootstrap-sass/assets/stylesheets',
+    './sass/'
+  ]
+}
+
 // Set up webserver + livereload with connect
 gulp.task('connect', function() {
   connect.server({
@@ -16,15 +23,11 @@ gulp.task('connect', function() {
 
 // Copy dependencies
 gulp.task('copy', function () {
-  //gulp.src(['bower_components/bootstrap/dist/css/bootstrap.min.css'])
-  //  .pipe(gulp.dest('./css'));
-  gulp.src(['bower_components/startbootstrap/templates/freelancer/css/bootstrap.min.css'])
-    .pipe(gulp.dest('./css'));
-  gulp.src(['bower_components/bootstrap/dist/js/bootstrap.min.js'])
+  gulp.src(['bower_components/bootstrap-sass/assets/javascripts/bootstrap.js'])
     .pipe(gulp.dest('./js/vendor'));
-  gulp.src(['bower_components/bootstrap/dist/fonts/**'])
+  gulp.src(['bower_components/bootstrap-sass/assets/fonts/bootstrap/**'])
     .pipe(gulp.dest('./fonts'));
-  gulp.src(['bower_components/jquery/jquery.min.js', 'bower_components/jquery/jquery.min.map'])
+  gulp.src(['bower_components/jquery/jquery.min.js'])
     .pipe(gulp.dest('./js/vendor'));
 });
 
@@ -37,12 +40,7 @@ gulp.task('html', function () {
 // Compile and minify Sass, then reload page
 gulp.task('sass', function() {
   gulp.src('./sass/*.scss')
-    .pipe(sass({includePaths:['./sass/'], errLogToConsole: true}))
-    .pipe(gulp.dest('./css'))
-    .pipe(sourcemaps.init())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
-    .pipe(sourcemaps.write())
+    .pipe(sass({includePaths:paths.sassIncludes, errLogToConsole: true}))
     .pipe(gulp.dest('./css'))
     .pipe(connect.reload());
 });

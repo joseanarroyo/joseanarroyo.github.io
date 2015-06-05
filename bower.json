@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "jquery": "1.10.x",
-    "bootstrap": "~3.2.0",
+    "bootstrap-sass": "~3.2.0",
     "startbootstrap": "latest"
   }
 }
