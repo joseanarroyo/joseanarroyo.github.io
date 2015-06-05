@@ -16,10 +16,8 @@ a, a:hover, a:focus, a:active, a.active {
   outline: 0;
   color: #18bc9c; }
 
-h1, h2 {
-  font-family: AmaticSC; }
-
-h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700; }
 
@@ -72,7 +70,8 @@ header img {
 
 header .intro-text .name {
   display: block;
-  font-family: AmaticSC;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 2em;
   font-weight: 700; }
 
@@ -106,6 +105,7 @@ header .intro-text .skills {
     font-size: 1.5em; } }
 
 .navbar {
+  text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700; }
 
@@ -345,7 +345,8 @@ footer .footer-below {
   transform: rotate(90deg); }
 
 body {
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400; }
 
 .navbar-jmo {
   background-color: #000; }
@@ -369,3 +370,14 @@ header {
 footer .footer-above {
   padding-top: 50px;
   background-color: #30687C; }
+
+header .intro-text .name {
+  text-transform: none;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700; }
+
+h2 {
+  text-transform: none;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 4em; }

@@ -1,9 +1,10 @@
 @import 'freelancer';
 
-$font-stack: Helvetica, Arial, sans-serif;
+$font-stack: Montserrat, Helvetica, Arial, sans-serif;
 
 body {
 	font-family: $font-stack;
+	font-weight: 400;
 }
 
 .navbar-jmo {
@@ -34,4 +35,18 @@ header {
 footer .footer-above {
 padding-top: 50px;
 background-color: #30687C;
+}
+
+header .intro-text .name {
+	text-transform: none;
+	font-family: "Amatic SC", cursive;
+	font-weight: 700;
+
+}
+
+h2 {
+	text-transform: none;
+	font-family: "Amatic SC", cursive;
+	font-weight: 700;
+	font-size: 4em;
 }
