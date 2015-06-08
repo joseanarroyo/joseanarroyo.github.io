@@ -1,5 +1,8 @@
 /* Sections
 =============================================== */
+
+//HOME
+
 header {
 	background-image: url('../images/homebgx1.jpg');
 	background-size: contain;
@@ -7,6 +10,7 @@ header {
 	background-repeat: no-repeat;
 	height: 300px;
 	margin-top: $navbar-height;
+	margin-bottom: 20px;
 
 	.intro-text {
 		padding: 70px 0;
@@ -19,7 +23,7 @@ header {
 	}
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 420px) { //iPhone 5 and smaller
 	header {
 		background-image: url('../images/homebg-sm.jpg');
 	}
@@ -65,13 +69,127 @@ header {
 
 }
 
-
-#portfolio {
-	background: $portfolio-bg-color;
-}
+//ABOUT
 #about {
 	background: $about-bg-color;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 150px;
+	h2 {
+		font-size: 3em;
+	}
+	.aboutbox {
+		margin-top: 20px;
+		padding: 20px 20px 70px 20px;
+		position: relative;
+		border: 2px solid #FFFFFF;
+		border-radius: 7px;
+	}
+	.mypic {
+		position: absolute;
+		height: 200px;
+		background-color: $about-bg-color;
+		bottom: -134px;
+		right: 55px;
+		img {
+			height: 200px;
+			width: auto;
+		}
+	}
 }
+
+@media screen and (max-width: 330px) { //iPhone 5 and smaller
+	#about {
+		h2 {
+			font-size: 2.8em;
+		}
+		.mypic {
+			right: 30px;
+		}
+	}
+}
+
+@media screen and (min-width: $screen-sm-min) { //768px
+
+	#about {
+		padding-right: 30px;
+		padding-left: 30px;
+		padding-bottom: 220px;
+		h2 {
+			font-size: 3.5em;
+		}
+		p {
+			font-size: 20px;
+		}
+		.aboutbox {
+			margin-top: 25px;
+			padding: 25px 25px 100px 25px;
+			border: 3px solid #FFFFFF;
+			p {
+				font-size: 25px
+			}
+		}
+		.mypic {
+			bottom: -102px;
+			right: 225px;
+			img {
+				height: 280px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $screen-md-min) { //992px
+
+	#about {
+		padding-bottom: 260px;
+		h2 {
+			font-size: 3.8em;
+		}
+		p {
+			font-size: 25px;
+		}
+		.aboutbox {
+			margin-top: 28px;
+			padding: 30px 30px 120px 30px;
+			p {
+				font-size: 30px
+			}
+		}
+		.mypic {
+			bottom: -86px;
+			right: 310px;
+			img {
+				height: 350px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $screen-lg-min) { //1200px
+
+	#about {
+		padding-bottom: 330px;
+		.aboutbox {
+			margin-top: 40px;
+			padding: 50px 50px 150px 50px;
+		}
+		.mypic {
+			bottom: -65px;
+			right: 372px;
+			img {
+				height: 400px;
+			}
+		}
+	}
+}
+
+//PORTFOLIO
+#portfolio {
+	background: $portfolio-bg-color;
+
+}
+
 #contact {
 	background: $contact-bg-color;
 }
