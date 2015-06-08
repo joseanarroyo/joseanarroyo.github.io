@@ -2,13 +2,69 @@
 =============================================== */
 header {
 	background-image: url('../images/homebgx1.jpg');
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+	margin-top: $navbar-height;
+
+	.intro-text {
+		padding: 70px 0;
+	}
+
 	p {
 		font-size: 20px;
 		font-weight: 700;
 		margin-bottom: 2px;
 	}
 }
+
+@media screen and (max-width: 420px) {
+	header {
+		background-image: url('../images/homebg-sm.jpg');
+	}
+
+}
+
+@media screen and (min-width: $screen-sm-min) {
+	header {
+		height: 500px;
+		margin-top: $navbar-height + 50px;
+
+		.intro-text {
+			padding: 135px 0;
+			.name {
+				font-size: 75px;
+			}
+		}
+
+		p {
+		font-size: 26px;
+		}
+	}
+
+}
+
+@media screen and (min-width: $screen-lg-min) {
+	header {
+		height: 640px;
+
+		.intro-text {
+			padding: 190px 0;
+			.name {
+				font-size: 100px;
+			}
+		}
+
+		p {
+		font-size: 30px;
+		font-weight: 700;
+		margin: 4px;
+		}
+	}
+
+}
+
 
 #portfolio {
 	background: $portfolio-bg-color;
