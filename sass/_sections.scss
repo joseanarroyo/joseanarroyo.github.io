@@ -18,14 +18,11 @@ header {
 		margin-bottom: 2px;
 	}
 }
-
 @media screen and (max-width: 420px) {
 	header {
 		background-image: url('../images/homebg-sm.jpg');
 	}
-
 }
-
 @media screen and (min-width: $screen-sm-min) {
 	header {
 		height: 500px;
@@ -33,45 +30,75 @@ header {
 
 		.intro-text {
 			padding: 135px 0;
+
 			.name {
 				font-size: 75px;
 			}
 		}
-
 		p {
-		font-size: 26px;
+			font-size: 26px;
 		}
 	}
-
 }
-
 @media screen and (min-width: $screen-lg-min) {
 	header {
 		height: 640px;
 
 		.intro-text {
 			padding: 190px 0;
+
 			.name {
 				font-size: 100px;
 			}
 		}
-
 		p {
-		font-size: 30px;
-		font-weight: 700;
-		margin: 4px;
+			font-size: 30px;
+			font-weight: 700;
+			margin: 4px;
 		}
 	}
-
 }
 
 
 #portfolio {
 	background: $portfolio-bg-color;
+
+	.project {
+		margin-bottom: 60px;
+
+		.project-img {
+			padding: 5px;
+			border: 3px dashed #444;
+
+			img {
+				width: 100%;
+				height: auto;
+				border: 2px solid #444;
+			}
+		}
+		.project-desc {
+			margin-top: 10px;
+
+			.fa {
+				font-size: 12px;
+			}
+		}
+	}
 }
+@media screen and (min-width: $screen-sm-min) {
+	#portfolio {
+		.project {
+			.project-img {
+				padding: 10px;
+			}
+		}
+	}
+}
+
 #about {
 	background: $about-bg-color;
 }
+
 #contact {
 	background: $contact-bg-color;
 }
