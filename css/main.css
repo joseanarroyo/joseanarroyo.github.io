@@ -4940,6 +4940,9 @@ header {
       #about .mypic img {
         height: 400px; } }
 
+.bear {
+  margin-bottom: -75px; }
+
 #portfolio {
   background: #FFE919; }
   #portfolio .project {
