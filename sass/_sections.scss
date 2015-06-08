@@ -71,7 +71,7 @@ header {
 	padding-bottom: 150px;
 
 	h2 {
-		font-size: 3em;
+		font-size: 2.8em;
 	}
 	.aboutbox {
 		margin-top: 20px;
@@ -180,11 +180,164 @@ header {
 	}
 }
 
-
 //SKILLS
 
-.bear {
-	margin-bottom: -75px;
+#skills {
+	padding-left: 20px;
+	padding-right: 20px;
+	h2 {
+		font-size: 2.8em;
+	}
+	.skill-img {
+		margin-top: 40px;
+		img {
+			height: 80px;
+		}
+	}
+	.skill-desc {
+		h3 {
+			font-family: $font-family-sans-serif;
+			font-weight: $headings-font-weight;
+			font-size: 24px;
+		}
+		p {
+			font-size: 14px;
+			margin-bottom: 12px;
+		}
+		strong {
+			font-family: $font-family-special;
+			font-size: 16px;
+		}
+	}
+	.blue {
+		h3, strong {
+			color: $about-bg-color;
+		}
+	}
+	.yellow {
+		h3, strong {
+			color: #EFE235;
+		}
+	}
+	.red {
+		h3, strong {
+			color: $contact-bg-color;
+		}
+	}
+	.divider {
+		height: 13px;
+	}
+	.bear {
+		margin-top: 25px;
+		margin-bottom: -75px;
+		img {
+		height: 120px;
+		}
+	}
+}
+
+@media screen and (max-width: 330px) { //iPhone 5 and smaller
+	#skills {
+		.skill-desc {
+			p {
+				font-size: 13px;
+			}
+			strong {
+				font-size: 14px;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: $screen-sm-min) { //768px
+	#skills {
+		h2 {
+			font-size: 3.5em;
+		}
+		p {
+			font-size: 20px;
+		}
+		.skill-img {
+			margin-top: 60px;
+		}
+		.skill-desc {
+			h3 {
+				font-size: 35px;
+			}
+			p {
+				font-size: 25px;
+			}
+			strong {
+				font-size: 27px;
+			}
+		}
+		.skill-img {
+			img {
+				height: 100px;
+			}
+		}
+		.bear {
+			margin-top: 40px;
+			margin-bottom: -75px;
+			img {
+			height: 170px;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: $screen-md-min) { //992px
+	#skills {
+		h2 {
+			font-size: 3.8em;
+		}
+		p {
+			font-size: 25px;
+		}
+		.skill-img {
+			margin-top: 50px;
+		}
+		.skill-desc {
+			h3 {
+				font-size: 30px;
+			}
+			p {
+				font-size: 20px;
+			}
+			strong {
+				font-size: 22px;
+			}
+		}
+		.bear {
+			margin-top: 50px;
+			margin-bottom: -100px;
+			img {
+			height: 180px;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: $screen-lg-min) { //1200px
+	#skills {
+		.skill-img {
+			margin-top: 50px;
+		}
+		.skill-desc {
+			h3 {
+				font-size: 35px;
+			}
+		}
+		.skill-img {
+			img {
+				height: 110px;
+			}
+		}
+	}
+
 }
 
 // PORTFOLIO

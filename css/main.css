@@ -4866,7 +4866,7 @@ header {
   padding-left: 20px;
   padding-bottom: 150px; }
   #about h2 {
-    font-size: 3em; }
+    font-size: 2.8em; }
   #about .aboutbox {
     margin-top: 20px;
     padding: 20px 20px 70px 20px;
@@ -4940,8 +4940,92 @@ header {
       #about .mypic img {
         height: 400px; } }
 
-.bear {
-  margin-bottom: -75px; }
+#skills {
+  padding-left: 20px;
+  padding-right: 20px; }
+  #skills h2 {
+    font-size: 2.8em; }
+  #skills .skill-img {
+    margin-top: 40px; }
+    #skills .skill-img img {
+      height: 80px; }
+  #skills .skill-desc h3 {
+    font-family: Marvel, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px; }
+  #skills .skill-desc p {
+    font-size: 14px;
+    margin-bottom: 12px; }
+  #skills .skill-desc strong {
+    font-family: Boogaloo, Helvetica, Arial, sans-serif;
+    font-size: 16px; }
+  #skills .blue h3, #skills .blue strong {
+    color: #14ADCC; }
+  #skills .yellow h3, #skills .yellow strong {
+    color: #EFE235; }
+  #skills .red h3, #skills .red strong {
+    color: #B21253; }
+  #skills .divider {
+    height: 13px; }
+  #skills .bear {
+    margin-top: 25px;
+    margin-bottom: -75px; }
+    #skills .bear img {
+      height: 120px; }
+
+@media screen and (max-width: 330px) {
+  #skills .skill-desc p {
+    font-size: 13px; }
+  #skills .skill-desc strong {
+    font-size: 14px; } }
+
+@media screen and (min-width: 768px) {
+  #skills h2 {
+    font-size: 3.5em; }
+  #skills p {
+    font-size: 20px; }
+  #skills .skill-img {
+    margin-top: 60px; }
+  #skills .skill-desc h3 {
+    font-size: 35px; }
+  #skills .skill-desc p {
+    font-size: 25px; }
+  #skills .skill-desc strong {
+    font-size: 27px; }
+  #skills .skill-img img {
+    height: 100px; }
+  #skills .bear {
+    margin-top: 40px;
+    margin-bottom: -75px; }
+    #skills .bear img {
+      height: 170px; } }
+
+@media screen and (min-width: 992px) {
+  #skills h2 {
+    font-size: 3.8em; }
+  #skills p {
+    font-size: 25px; }
+  #skills .skill-img {
+    margin-top: 50px; }
+  #skills .skill-desc h3 {
+    font-size: 30px; }
+  #skills .skill-desc p {
+    font-size: 20px; }
+  #skills .skill-desc strong {
+    font-size: 22px; }
+  #skills .bear {
+    margin-top: 50px;
+    margin-bottom: -100px; }
+    #skills .bear img {
+      height: 180px; } }
+
+@media screen and (min-width: 1200px) {
+  #skills .skill-img {
+    margin-top: 50px; }
+  #skills .skill-desc h3 {
+    font-size: 35px; }
+  #skills .skill-img img {
+    height: 110px; } }
 
 #portfolio {
   background: #FFE919; }
