@@ -10,11 +10,13 @@ $contact-bg-color: #B21253;
 =============================================== */
 
 // Colors
-$font-family-sans-serif: Montserrat, Helvetica, Arial, sans-serif;
+$font-family-sans-serif: Marvel, Helvetica, Arial, sans-serif;
 $link-hover-color: #18bc9c;
 $headings-font-family: "Amatic SC", cursive;
 $headings-font-weight: 700;
-$font-size-base: 16px;
+$font-size-base: 18px;
+$font-size-h1: floor(($font-size-base * 3.1)); // ~55px
+$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
 $navbar-default-bg: #000;
 $navbar-default-brand-color: #e7e7e7;
 
