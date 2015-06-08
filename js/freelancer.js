@@ -15,6 +15,34 @@ $(function() {
     });
 });
 
+
+// Portfolio functionality
+$(window).load(function() {
+    // Only load 3 portfolio items at a time
+    $("#portfolio .project").hide();
+    $("#portfolio .project").slice(0, 3).show();
+
+    $("#portfolio #more").click(function(){
+        var showing = $("#portfolio .project:visible").length;
+        $("#portfolio .project").slice(showing - 1, showing + 3).fadeIn('fast');
+        $("#portfolio .project").each(function(){
+            if($(this).is(':hidden')){
+                $("#portfolio #more").show();
+            }
+            else{
+                $("#portfolio #more").hide();
+            }
+        });
+    });
+});
+
+// Initialize lazy loading of images
+$("img.lazy").lazyload({
+    effect: "fadeIn",
+    threshold: 400
+});
+
+
 // Floating label headings for the contact form
 $(function() {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {

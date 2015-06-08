@@ -4944,6 +4944,23 @@ header {
 
 #portfolio {
   background: #FFE919; }
+  #portfolio .project {
+    margin-bottom: 60px; }
+    #portfolio .project .project-img {
+      padding: 5px;
+      border: 3px dashed #444; }
+      #portfolio .project .project-img img {
+        width: 100%;
+        height: auto;
+        border: 2px solid #444; }
+    #portfolio .project .project-desc {
+      margin-top: 10px; }
+      #portfolio .project .project-desc .fa {
+        font-size: 12px; }
+
+@media screen and (min-width: 768px) {
+  #portfolio .project .project-img {
+    padding: 10px; } }
 
 #contact {
   background: #B21253; }

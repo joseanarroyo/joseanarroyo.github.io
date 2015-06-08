@@ -1,8 +1,7 @@
 /* Sections
 =============================================== */
 
-//HOME
-
+// HOME
 header {
 	background-image: url('../images/homebgx1.jpg');
 	background-size: contain;
@@ -22,14 +21,11 @@ header {
 		margin-bottom: 2px;
 	}
 }
-
 @media screen and (max-width: 420px) { //iPhone 5 and smaller
 	header {
 		background-image: url('../images/homebg-sm.jpg');
 	}
-
 }
-
 @media screen and (min-width: $screen-sm-min) {
 	header {
 		height: 500px;
@@ -37,44 +33,42 @@ header {
 
 		.intro-text {
 			padding: 135px 0;
+
 			.name {
 				font-size: 75px;
 			}
 		}
-
 		p {
-		font-size: 26px;
+			font-size: 26px;
 		}
 	}
-
 }
-
 @media screen and (min-width: $screen-lg-min) {
 	header {
 		height: 640px;
 
 		.intro-text {
 			padding: 190px 0;
+
 			.name {
 				font-size: 100px;
 			}
 		}
-
 		p {
-		font-size: 30px;
-		font-weight: 700;
-		margin: 4px;
+			font-size: 30px;
+			font-weight: 700;
+			margin: 4px;
 		}
 	}
-
 }
 
-//ABOUT
+// ABOUT
 #about {
 	background: $about-bg-color;
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 150px;
+
 	h2 {
 		font-size: 3em;
 	}
@@ -91,13 +85,13 @@ header {
 		background-color: $about-bg-color;
 		bottom: -134px;
 		right: 55px;
+
 		img {
 			height: 200px;
 			width: auto;
 		}
 	}
 }
-
 @media screen and (max-width: 330px) { //iPhone 5 and smaller
 	#about {
 		h2 {
@@ -108,13 +102,12 @@ header {
 		}
 	}
 }
-
 @media screen and (min-width: $screen-sm-min) { //768px
-
 	#about {
 		padding-right: 30px;
 		padding-left: 30px;
 		padding-bottom: 220px;
+
 		h2 {
 			font-size: 3.5em;
 		}
@@ -125,6 +118,7 @@ header {
 			margin-top: 25px;
 			padding: 25px 25px 100px 25px;
 			border: 3px solid #FFFFFF;
+
 			p {
 				font-size: 25px
 			}
@@ -132,17 +126,17 @@ header {
 		.mypic {
 			bottom: -102px;
 			right: 225px;
+
 			img {
 				height: 280px;
 			}
 		}
 	}
 }
-
 @media screen and (min-width: $screen-md-min) { //992px
-
 	#about {
 		padding-bottom: 260px;
+
 		h2 {
 			font-size: 3.8em;
 		}
@@ -152,6 +146,7 @@ header {
 		.aboutbox {
 			margin-top: 28px;
 			padding: 30px 30px 120px 30px;
+
 			p {
 				font-size: 30px
 			}
@@ -184,12 +179,43 @@ header {
 	}
 }
 
-//PORTFOLIO
+// PORTFOLIO
 #portfolio {
 	background: $portfolio-bg-color;
 
+	.project {
+		margin-bottom: 60px;
+
+		.project-img {
+			padding: 5px;
+			border: 3px dashed #444;
+
+			img {
+				width: 100%;
+				height: auto;
+				border: 2px solid #444;
+			}
+		}
+		.project-desc {
+			margin-top: 10px;
+
+			.fa {
+				font-size: 12px;
+			}
+		}
+	}
+}
+@media screen and (min-width: $screen-sm-min) {
+	#portfolio {
+		.project {
+			.project-img {
+				padding: 10px;
+			}
+		}
+	}
 }
 
+// CONTACT
 #contact {
 	background: $contact-bg-color;
 }
