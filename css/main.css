@@ -5050,6 +5050,11 @@ header {
       margin-top: 10px; }
       #portfolio .project .project-desc .fa {
         font-size: 12px; }
+  #portfolio .marsh {
+    margin-top: 40px;
+    margin-bottom: -40px; }
+    #portfolio .marsh img {
+      height: 150px; }
 
 @media screen and (min-width: 768px) {
   #portfolio h2 {
@@ -5061,7 +5066,9 @@ header {
     margin-top: 20px;
     margin-bottom: 30px; }
   #portfolio .project .project-img {
-    padding: 10px; } }
+    padding: 10px; }
+  #portfolio .marsh img {
+    height: 200px; } }
 
 @media screen and (min-width: 992px) {
   #portfolio h2 {
@@ -5071,22 +5078,38 @@ header {
   #portfolio .bacon {
     height: 250px;
     margin-top: 25px;
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+  #portfolio .marsh img {
+    height: 240px; } }
 
 @media screen and (min-width: 1200px) {
   #portfolio .bacon {
     height: 280px;
     margin-top: 30px;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  #portfolio .marsh img {
+    height: 300px; } }
 
 #contact {
   background: #B21253;
   color: #FFFFFF; }
-  #contact .social a:focus {
-    outline: 0; }
-  #contact .social img {
-    width: 50px;
-    margin: 15px 6px; }
+  #contact h2 {
+    font-size: 2.4em; }
+  #contact .social {
+    margin-top: 30px; }
+    #contact .social a:focus {
+      outline: 0; }
+    #contact .social img {
+      width: 50px;
+      margin: 15px 6px; }
+  #contact .catbox {
+    height: 100px;
+    padding-right: 20px; }
+    #contact .catbox .cat {
+      float: right; }
+      #contact .catbox .cat img {
+        height: 150px;
+        width: auto; }
 
 @media screen and (min-width: 480px) {
   #contact .social img {
@@ -5094,11 +5117,36 @@ header {
     margin: 15px 12px; } }
 
 @media screen and (min-width: 768px) {
+  #contact h2 {
+    font-size: 3em; }
+  #contact p {
+    font-size: 20px; }
   #contact .social img {
     width: 96px;
-    margin: 15px; } }
+    margin: 15px; }
+  #contact .catbox {
+    height: 120px;
+    padding-right: 22px; }
+    #contact .catbox .cat img {
+      height: 170px; } }
 
 @media screen and (min-width: 992px) {
+  #contact h2 {
+    font-size: 3.5em; }
+  #contact p {
+    font-size: 25px; }
   #contact .social img {
     width: 116px;
-    margin: 20px; } }
+    margin: 20px; }
+  #contact .catbox {
+    height: 150px;
+    padding-right: 30px; }
+    #contact .catbox .cat img {
+      height: 220px; } }
+
+@media screen and (min-width: 1200px) {
+  #contact .catbox {
+    height: 200px;
+    padding-right: 35px; }
+    #contact .catbox .cat img {
+      height: 260px; } }

@@ -375,6 +375,13 @@ header {
 			}
 		}
 	}
+	.marsh {
+		margin-top: 40px;
+		margin-bottom: -40px;
+			img {
+				height: 150px;
+			}
+	}
 }
 @media screen and (min-width: $screen-sm-min) { //768
 	#portfolio {
@@ -394,6 +401,11 @@ header {
 				padding: 10px;
 			}
 		}
+		.marsh {
+			img {
+				height: 200px;
+			}
+		}
 	}
 }
 
@@ -410,6 +422,12 @@ header {
 			margin-top: 25px;
 			margin-bottom: 35px;
 		}
+
+		.marsh {
+			img {
+				height: 240px;
+			}
+		}
 	}
 }
 
@@ -420,6 +438,11 @@ header {
 			margin-top: 30px;
 			margin-bottom: 40px;
 		}
+		.marsh {
+			img {
+				height: 300px;
+			}
+		}
 	}
 }
 
@@ -427,14 +450,29 @@ header {
 #contact {
 	background: $contact-bg-color;
 	color: #FFFFFF;
-
+	h2 {
+		font-size: 2.4em;
+	}
 	.social {
+		margin-top: 30px;
 		a:focus {
 			outline: 0;
 		}
 		img {
 			width: 50px;
 			margin: 15px 6px;
+		}
+	}
+
+	.catbox {
+		height: 100px;
+		padding-right: 20px;
+		.cat {
+			float: right;
+			img {
+				height: 150px;
+				width: auto;
+			}
 		}
 	}
 }
@@ -448,17 +486,61 @@ header {
 }
 @media screen and (min-width: $screen-sm-min) {
 	#contact {
+		h2 {
+			font-size: 3em;
+		}
+		p {
+			font-size: 20px;
+		}
 		.social img {
 			width: 96px;
 			margin: 15px;
+		}
+		.catbox {
+		height: 120px;
+		padding-right: 22px;
+			.cat {
+				img {
+					height: 170px;
+				}
+			}
 		}
 	}
 }
 @media screen and (min-width: $screen-md-min) {
 	#contact {
+		h2 {
+			font-size: 3.5em;
+		}
+		p {
+			font-size: 25px;
+		}
 		.social img {
 			width: 116px;
 			margin: 20px;
+		}
+		.catbox {
+		height: 150px;
+		padding-right: 30px;
+			.cat {
+				img {
+					height: 220px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $screen-lg-min) {
+	#contact {
+		.catbox {
+			height: 200px;
+			padding-right: 35px;
+				.cat {
+					img {
+						height: 260px;
+					}
+				}
 		}
 	}
 }
