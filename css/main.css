@@ -4611,9 +4611,6 @@ header {
 
 section {
   padding: 100px 0; }
-  section.success {
-    color: #fff;
-    background: #18bc9c; }
   section h2 {
     margin: 0;
     font-size: 3em; }
@@ -4864,6 +4861,7 @@ header {
 
 #about {
   background: #14ADCC;
+  color: #FFFFFF;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 150px; }
